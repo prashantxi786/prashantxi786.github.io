@@ -56,7 +56,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Image src=""/>
+              <Image border={"1px solid black"} width={{lg:"50px"}} src="https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true"/>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
