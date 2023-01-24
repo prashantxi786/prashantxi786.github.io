@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import ChakraNavbar from './Components/chakraNavbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Navbar</h1>
-      <h2>Below Navbar</h2>
+      <ChakraNavbar/>
     </div>
   );
 }
