@@ -14,8 +14,14 @@ import {
     PopoverContent,
     useColorModeValue,
     useBreakpointValue,
+    useColorMode,
     useDisclosure,
   } from '@chakra-ui/react';
+import AOS from 'aos';
+import React from 'react'
+import 'aos/dist/aos.css';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+
   import {
     HamburgerIcon,
     CloseIcon,
@@ -25,7 +31,11 @@ import {
   
   export default function ChakraNavbar() {
     const { isOpen, onToggle } = useDisclosure();
-  
+    const { colorMode, toggleColorMode } = useColorMode();
+
+    React.useEffect(() => {
+      AOS.init();
+    }, [])
     return (
       <Box>
         <Flex
@@ -56,7 +66,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Image border={"1px solid black"} width={{lg:"50px"}} src="https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true"/>
+              <Image data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true":""}/>
             </Text>
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -64,32 +74,9 @@ import {
             </Flex>
           </Flex>
   
-          <Stack
-            flex={{ base: 1, md: 0 }}
-            justify={'flex-end'}
-            direction={'row'}
-            spacing={6}>
-            <Button
-              as={'a'}
-              fontSize={'sm'}
-              fontWeight={400}
-              variant={'link'}
-              href={'#'}>
-              Sign In
-            </Button>
-            <Button
-              display={{ base: 'none', md: 'inline-flex' }}
-              fontSize={'sm'}
-              fontWeight={600}
-              color={'white'}
-              bg={'pink.400'}
-              href={'#'}
-              _hover={{
-                bg: 'pink.300',
-              }}>
-              Sign Up
-            </Button>
-          </Stack>
+          <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
         </Flex>
   
         <Collapse in={isOpen} animateOpacity>
@@ -247,41 +234,19 @@ import {
   
   const NAV_ITEMS = [
     {
-      label: 'Inspiration',
-      children: [
-        {
-          label: 'Explore Design Work',
-          subLabel: 'Trending Design to inspire you',
-          href: '#',
-        },
-        {
-          label: 'New & Noteworthy',
-          subLabel: 'Up-and-coming Designers',
-          href: '#',
-        },
-      ],
+      label: 'About me',
+      
     },
     {
-      label: 'Find Work',
-      children: [
-        {
-          label: 'Job Board',
-          subLabel: 'Find your dream design job',
-          href: '#',
-        },
-        {
-          label: 'Freelance Projects',
-          subLabel: 'An exclusive list for contract work',
-          href: '#',
-        },
-      ],
+      label: 'Skills',
+      
     },
     {
-      label: 'Learn Design',
+      label: 'My Projects',
       href: '#',
     },
     {
-      label: 'Hire Designers',
+      label: 'Contact',
       href: '#',
     },
   ];
