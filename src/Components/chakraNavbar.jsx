@@ -37,7 +37,7 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
       AOS.init();
     }, [])
     return (
-      <Box>
+      <Box boxShadow= "0px 1px 5px 1px gray" fontSize={"20px"}>
         <Flex
           bg={useColorModeValue('white', 'gray.800')}
           color={useColorModeValue('gray.600', 'white')}
@@ -61,15 +61,15 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+          <Flex flex={{ base: 1 }} justify={{ base: 'left', md: 'space-between', }}>
             <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Image data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true":""}/>
+              <Image data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo%202.png?raw=true":"https://github.com/prashantxi786/prashantxi786.github.io/blob/master/Images/PS%20logo1.png?raw=true"}/>
             </Text>
   
-            <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+            <Flex mr="20px" display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" >
               <DesktopNav />
             </Flex>
           </Flex>
@@ -87,20 +87,19 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
-    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+    const linkColor = useColorModeValue('gray.900', 'orange.200');
+    const linkHoverColor = useColorModeValue('blue.300', 'red.400');
   
     return (
-      <Stack direction={'row'} spacing={4}>
+      <Stack  display="flex" alignItems="right" direction={'row'} spacing={10}>
         {NAV_ITEMS.map((navItem) => (
-          <Box key={navItem.label}>
+          <Box boxShadow= "1px 1px 0px 1px lightgray" key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
                 <Link
                   p={2}
                   href={navItem.href ?? '#'}
-                  fontSize={'sm'}
+                  fontSize={{base:"sm",md:"md",lg:'md'}}
                   fontWeight={500}
                   color={linkColor}
                   _hover={{
@@ -111,21 +110,6 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons';
                 </Link>
               </PopoverTrigger>
   
-              {navItem.children && (
-                <PopoverContent
-                  border={0}
-                  boxShadow={'xl'}
-                  bg={popoverContentBgColor}
-                  p={4}
-                  rounded={'xl'}
-                  minW={'sm'}>
-                  <Stack>
-                    {navItem.children.map((child) => (
-                      <DesktopSubNav key={child.label} {...child} />
-                    ))}
-                  </Stack>
-                </PopoverContent>
-              )}
             </Popover>
           </Box>
         ))}
