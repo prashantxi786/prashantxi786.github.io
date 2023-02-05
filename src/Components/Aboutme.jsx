@@ -31,13 +31,12 @@ import { useMediaQuery } from '@chakra-ui/react'
        <Text fontSize={"30px"} fontWeight="600">All <span style={colorMode=="dark"?darkcolor:lightcolor}>About</span> Me</Text>
        <Box  fontSize="16px" fontWeight={"400"} marginTop="20px">
       <Text>
-      Hello! My name is Piyush Khurana & I enjoy creating things that live on the internet. I'm a passionate Developer, with strong administrative & communication skills, good attention to detail & the ability to write efficient code.
-      </Text>
+      Hello! My name is Prashant Singh & I like creating things that live on the internet. I'm a growth-oriented Web Developer with strong adaptive,administrative & communication skills, good attention to detail & the ability to write efficient code.      </Text>
       <hr style={{marginTop:"20px"}}/>
       <Text marginTop="10px">I'm open to Job opportunities. If you think my skills are relevant to your job requirements then do contact me.</Text>
     </Box>
     <Box  marginTop="60px">
-        <Image src="https://www.wingstechsolutions.com/wp-content/uploads/2022/03/full-stack-development.gif" width="100%"></Image>
+        <Image src="https://media.tenor.com/NOYF3f82b_gAAAAC/programmer.gif" width="100%"></Image>
     </Box>
     </Box>}
        

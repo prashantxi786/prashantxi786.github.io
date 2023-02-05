@@ -77,7 +77,7 @@ const Homepage = () => {
      <Box style={{fontSize:"16px",fontWeight:'Bold'}} textAlign="start">
         <Typewriter
             options={{
-              strings: ["A passionate Full Stack Web Developer."],
+              strings: ["I'm a growth-oriented Full Stack Web Developer."],
               autoStart: true,
               loop: true,
   }}
@@ -93,7 +93,7 @@ const Homepage = () => {
   {colorMode === 'dark'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box>
 </Link>
-<Link href="https://drive.google.com/file/d/1vqWuq5cA26_WRNHWpiq4sFmVZNfMgVBA/view?usp=share_link">
+<Link href="https://drive.google.com/file/d/1glnMl_97W2xf6E1fckEZEqCVTBaKu_Ia/view?usp=sharing">
 <Box>
   {colorMode === 'dark'?<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>:<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>}
   </Box>
