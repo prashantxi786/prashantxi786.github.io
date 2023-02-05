@@ -27,7 +27,7 @@ const Githubcalender = () => {
         </Box>: <Box  width="90%" margin="auto" marginTop="20px">
         <Text fontSize={{base:"18px",md:"23px",lg:"28px"}} fontWeight="Bold">GITHUB CONTRIBUTION <span style={colorMode=="dark"?darkcolor:lightcolor}>CALENDER</span> </Text>
         <Box marginTop="20px">
-        <Center><GitHubCalendar username="piyushkhurana8744" blockSize={10} blockMargin={6}/></Center>
+        <Center><GitHubCalendar username="prashantxi786" blockSize={10} blockMargin={6}/></Center>
         </Box>
         <GithubStats />
         </Box>}
