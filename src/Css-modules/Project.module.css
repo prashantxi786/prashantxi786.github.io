@@ -1,0 +1,41 @@
+
+.mid_sec{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.child{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.child:hover{
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+   
+}
+.proName{
+   margin-top: 2px;
+   color: rgb(78, 78, 139);
+   font-size: 25px;
+   font-weight: bold;
+}
+.techStack{
+    color: rgb(94, 94, 196);
+    font-size: 17px;
+    font-weight: bold;
+ }
+.proPara{
+    font-size: 14px;
+    line-height: 18px;
+    color: rgb(12, 12, 12);
+    font-weight: 600;
+    text-align:justify;
+    padding:10px
+}
+.icons{
+    font-size: 25px;
+    color: bisque;
+}

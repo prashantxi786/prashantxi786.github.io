@@ -1,0 +1,10 @@
+  
+.lfooter{
+  background: rgb(99,111,137);
+background: radial-gradient(circle, rgba(99,111,137,0.18820028011204482) 17%, rgba(154,154,163,1) 100%);
+  }
+  .rfooter{
+    background: rgb(15,16,18);
+background: radial-gradient(circle, rgba(15,16,18,0.6251750700280112) 46%, rgba(25,25,28,1) 100%);
+  }
+    
