@@ -85,7 +85,7 @@ export const Projects = () => {
        
        >
         {proArray.map((pro)=>
-        <GridItem key={pro.proname} className={styles.child}>
+        <GridItem data key={pro.proname} className={styles.child}>
         <img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src={pro.gif} alt="expedia" />
          <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >{pro.proname}</h2>
 
@@ -95,10 +95,10 @@ export const Projects = () => {
          
         
         <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
-          <Button  _hover={{ fontSize: '20px',bg:"#e53e3e"}}
+          <Button  className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}
    > <a href={pro.video}><BsFillCameraVideoFill /></a> </Button>
-          <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href={pro.link}><BsFillEyeFill /></a></Button>
-          <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href={pro.src}><BsGithub /></a></Button>
+          <Button className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a href={pro.link}><BsFillEyeFill /></a></Button>
+          <Button  className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a href={pro.src}><BsGithub /></a></Button>
         </Box>
 
       </GridItem> 
@@ -111,19 +111,4 @@ export const Projects = () => {
     </Box>
   )
 }
-{/* <GridItem className={styles.child}>
-          <img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src="https://cdn.dribbble.com/users/4400366/screenshots/15917760/media/21dd5982b34f1e95353b3a8089862f83.png?compress=1&resize=400x300" alt="expedia" />
-           <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >TechoMania</h2>
 
-           <Text className={styles.proPara}>Expedia is one of the biggest online travel websites out there. It can be used to search for and book all sorts of travel, including hotels, airfare, rental cars, cruises, activities, attractions and vacation packages.</Text>
-
-           <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>HTML,CSS and JavaScript</Text>
-          
-          <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
-            <Button  _hover={{ fontSize: '20px',bg:"#e53e3e"}}
-     > <a href="https://drive.google.com/file/d/1hIk6UO947E8EXRcivx5BD_Z88pDRaGcW/view"><BsFillCameraVideoFill /></a> </Button>
-            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://techomania.vercel.app/'><BsFillEyeFill /></a></Button>
-            <Button _hover={{ fontSize: '20px',bg:"#e53e3e"}}><a href='https://github.com/prashantxi786/voiceless-lunchroom-7858'><BsGithub /></a></Button>
-          </Box>
-
-        </GridItem>  */}

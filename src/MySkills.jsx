@@ -24,7 +24,7 @@ const Myskills = () => {
      category:"Frontend"
    },
    {id:5,
-     image:"https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+     image:"https://cdn.worldvectorlogo.com/logos/redux.svg",
      name:"Redux",
      category:"Frontend"
    },
@@ -49,7 +49,7 @@ const Myskills = () => {
      category:"Backend"
    },
    {id:10,
-     image:"https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongoose/mongoose.png",
+     image:"https://i.postimg.cc/kGtvZbKf/430-4309574-mongoose-js-logo-hd-png-download-removebg-preview.png",
      name:"Mangoose",
      category:"Backend"
    },

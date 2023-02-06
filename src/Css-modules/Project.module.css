@@ -9,8 +9,9 @@
 .child{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.909);
     padding: 20px;
+    height: 550px;
 }
 .child:hover{
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -36,6 +37,6 @@
     padding:10px
 }
 .icons{
-    font-size: 25px;
-    color: bisque;
+    color: black;
+    background-color:rgba(0, 153, 255, 0.139)
 }
