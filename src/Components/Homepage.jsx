@@ -64,12 +64,12 @@ const Homepage = () => {
 </Flex>
         </Box>
         <Box width="30%" margin="auto">
-          <Image _hover={{boxShadow:"1px 1px 100px 1px cyan"}} src="https://i.postimg.cc/Bb07rRDL/05624818119-Prashant-Singh.jpg" borderRadius={"50%"} width="300px"></Image>
+          <Image _hover={{ boxShadow:"1px 1px 50px 1px #814930"}} src="https://i.postimg.cc/gkTLqmrN/ppimage2.jpg" borderRadius={"50%"} width="300px"></Image>
         </Box>
      </Flex>
       </div>:<Box  style={colorMode === 'light'?mainbox:truebox}>
       <Center><Box>
-      <Image src="https://i.postimg.cc/Bb07rRDL/05624818119-Prashant-Singh.jpg" borderRadius={"50%"} width="200px"></Image>
+      <Image src="https://i.postimg.cc/gkTLqmrN/ppimage2.jpg" borderRadius={"50%"} width="200px"></Image>
      </Box>
      </Center>
      <Box marginTop="20px">
