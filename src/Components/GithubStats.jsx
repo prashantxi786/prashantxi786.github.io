@@ -26,8 +26,8 @@ const GithubStats = () => {
            <Text fontSize={"20px"}>My overall statistics and contribution</Text>
           <Center>
           <Box  marginTop="20px">
-            {colorMode=="dark"?<Image width='400px' src="https://github-stats-alpha.vercel.app/api?username=prashantxi786&cc=000&tc=fff&ic=fff&bg=fff"></Image>:<Image src="https://github-stats-alpha.vercel.app/api?username=piyushkhurana8744"></Image>}
-           {colorMode=="dark"?<Image marginTop="20px" src="https://github-readme-streak-stats.herokuapp.com?user=prashantxi786&theme=dark&hide_border=true"></Image>:<Image marginTop="20px" src="https://github-readme-streak-stats.herokuapp.com?user=piyushkhurana8744&hide_border=false"></Image>}
+            {colorMode=="dark"?<Image width='400px' src="https://github-stats-alpha.vercel.app/api?username=prashantxi786&cc=000&tc=fff&ic=fff&bg=fff"></Image>:<Image src="https://github-stats-alpha.vercel.app/api?username=prashantxi786"></Image>}
+           {colorMode=="dark"?<Image marginTop="20px" src="https://github-readme-streak-stats.herokuapp.com?user=prashantxi786&theme=dark&hide_border=true"></Image>:<Image marginTop="20px" src="https://github-readme-streak-stats.herokuapp.com?user=prashantxi786&hide_border=false"></Image>}
             
             </Box></Center> 
         </Box>}
