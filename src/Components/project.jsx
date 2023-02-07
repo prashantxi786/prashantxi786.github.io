@@ -1,4 +1,4 @@
-import {Box,Button,Grid, GridItem, Heading,Text, useColorMode } from '@chakra-ui/react'
+import {Box,Button,Grid, GridItem, Heading,Text, useColorMode ,Link} from '@chakra-ui/react'
 import React from 'react'
 import styles from "../Css-modules/Project.module.css"
 import {BsFillCameraVideoFill,BsFillEyeFill,BsGithub} from "react-icons/bs"
@@ -86,7 +86,7 @@ export const Projects = () => {
        >
         {proArray.map((pro)=>
         <GridItem data key={pro.proname} className={styles.child}>
-        <img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src={pro.gif} alt="expedia" />
+        <Link href={pro.link}><img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src={pro.gif} alt="expedia" /></Link>
          <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >{pro.proname}</h2>
 
          <Text className={styles.proPara}>{pro.prodesc}</Text>
