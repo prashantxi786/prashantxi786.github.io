@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "../Css-modules/avatar.module.css"
 import {Box,Text,Image, Flex,Button,Link,Center,useColorMode} from "@chakra-ui/react"
 import { useMediaQuery } from '@chakra-ui/react'
 import Typewriter from 'typewriter-effect';
@@ -64,7 +65,7 @@ const Homepage = () => {
 </Flex>
         </Box>
         <Box width="30%" margin="auto">
-          <Image _hover={{ boxShadow:"1px 1px 50px 1px #814930"}} src="https://i.postimg.cc/gkTLqmrN/ppimage2.jpg" borderRadius={"50%"} width="300px"></Image>
+          <Image className={styles.avatar} _hover={{ boxShadow:"1px 1px 50px 1px #814930"}} src="https://i.postimg.cc/wv4mgCwX/ppimage2-removebg-preview.png" borderRadius={"40%"} width="300px"></Image>
         </Box>
      </Flex>
       </div>:<Box  style={colorMode === 'light'?mainbox:truebox}>
