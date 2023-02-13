@@ -110,7 +110,7 @@ import { contextapi } from '../Contextapi';
               <PopoverTrigger>
                 <HashLink
                   activeClass="active"
-                  to={navItem.href ?? '#'}
+                  to={navItem.href}
                   spy={true}
                   smooth={true}
                   offset={-70}
@@ -255,5 +255,5 @@ import { contextapi } from '../Contextapi';
     {
       label: 'Contact',
       href: '/#contact',
-    },
+    }
   ];

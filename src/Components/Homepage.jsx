@@ -57,7 +57,7 @@ const Homepage = () => {
   <Box>
   {colorMode === 'light'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box></Link>
-  <a href="../Prashant_Singh_Resume.pdf" download>
+  <a href="https://drive.google.com/file/d/1oRoexwZp7b6q7m_245oTqjDpjTtV8hIn/view?usp=sharing" target="_blank" download>
   <Box>
   {colorMode === 'light'?<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>:<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>}
   </Box></a>
@@ -70,7 +70,7 @@ const Homepage = () => {
      </Flex>
       </div>:<Box  style={colorMode === 'light'?mainbox:truebox}>
       <Center><Box>
-      <Image src="https://i.postimg.cc/gkTLqmrN/ppimage2.jpg" borderRadius={"50%"} width="200px"></Image>
+      <Image src="https://i.postimg.cc/wv4mgCwX/ppimage2-removebg-preview.png" borderRadius={"50%"} width="200px"></Image>
      </Box>
      </Center>
      <Box marginTop="20px">
@@ -94,9 +94,9 @@ const Homepage = () => {
   {colorMode === 'dark'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box>
 </Link>
-<Link href="https://drive.google.com/file/d/1glnMl_97W2xf6E1fckEZEqCVTBaKu_Ia/view?usp=sharing">
+<Link href="https://drive.google.com/file/d/1oRoexwZp7b6q7m_245oTqjDpjTtV8hIn/view?usp=sharing" target="_blank">
 <Box>
-  {colorMode === 'dark'?<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>:<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>}
+  {colorMode === 'dark'?<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>:<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s",textDecoration:"none"}}>Resume   <MdDownload  /></Button>}
   </Box>
 </Link>
   
