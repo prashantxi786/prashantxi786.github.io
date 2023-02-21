@@ -31,7 +31,6 @@ import styles from "../Css-modules/navbar.module.css"
   } from '@chakra-ui/icons';
 import { useContext } from 'react';
 import { contextapi } from '../Contextapi';
-  
   export default function ChakraNavbar() {
     const {change,logout}=useContext(contextapi)
     const handleToggle=()=>{
@@ -78,7 +77,7 @@ import { contextapi } from '../Contextapi';
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-              <Link href="/"><Image className={styles.logo} data-aos="fade-right" height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://i.postimg.cc/Sx5vkgzr/PS-logo-2.png":"https://i.postimg.cc/rsQfbjk5/PS-logo1.png"}/></Link>
+              <Link href="/"><Image className={styles.logo} height={{base:"30px",md:"35px",lg:"35px"}} width={{base:"",md:"",lg:"50px"}} src={colorMode==="light"? "https://i.postimg.cc/Sx5vkgzr/PS-logo-2.png":"https://i.postimg.cc/rsQfbjk5/PS-logo1.png"}/></Link>
             </Text>
   
             <Flex mr="20px" display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" >

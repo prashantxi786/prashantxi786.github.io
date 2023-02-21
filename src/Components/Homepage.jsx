@@ -8,6 +8,7 @@ import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
 import Myskills from '../MySkills';
 import Githubcalender from "./Githubcalender"
+import Prashant_Singh_Resume from "./Prashant_Singh_Resume.pdf"
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
 {id:3,link:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
@@ -33,9 +34,14 @@ const Homepage = () => {
     paddingBottom:"80px",
     backgroundColor:"#050402"
   }
+  const handleClick=()=>{
+    window.open(Prashant_Singh_Resume)
+  }
   return (
     <div  data-aos="fade-up-right" data-aos-duration="3000" style={{marginTop:"50px"}}>
-      {isLargerThan800?<div  style={colorMode === 'light'?mainbox:truebox} data-aos="fade-up-right">
+      {isLargerThan800?
+      // PC view
+      <div  style={colorMode === 'light'?mainbox:truebox} data-aos="fade-up-right">
       <Flex textAlign={"start"} width="90%" margin="auto" marginTop="30px" >
 
       <Box width="50%" margin="auto" data-aos="fade-right">
@@ -57,9 +63,9 @@ const Homepage = () => {
   <Box>
   {colorMode === 'light'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box></Link>
-  <a href="https://drive.google.com/file/d/1oRoexwZp7b6q7m_245oTqjDpjTtV8hIn/view?usp=sharing" target="_blank" download>
-  <Box>
-  {colorMode === 'light'?<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>:<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>}
+  <a href={Prashant_Singh_Resume} download>
+  <Box onClick={handleClick}>
+  {colorMode === 'light'?<Button  backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>:<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>}
   </Box></a>
   
 </Flex>
@@ -68,7 +74,9 @@ const Homepage = () => {
           <Image className={styles.avatar} _hover={{ boxShadow:"1px 1px 50px 1px #814930"}} src="https://i.postimg.cc/wv4mgCwX/ppimage2-removebg-preview.png" borderRadius={"40%"} width="300px"></Image>
         </Box>
      </Flex>
-      </div>:<Box  style={colorMode === 'light'?mainbox:truebox}>
+      </div>:
+      // Mobile view
+      <Box  style={colorMode === 'light'?mainbox:truebox}>
       <Center><Box>
       <Image src="https://i.postimg.cc/wv4mgCwX/ppimage2-removebg-preview.png" borderRadius={"50%"} width="200px"></Image>
      </Box>
@@ -94,11 +102,11 @@ const Homepage = () => {
   {colorMode === 'dark'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box>
 </Link>
-<Link href="https://drive.google.com/file/d/1oRoexwZp7b6q7m_245oTqjDpjTtV8hIn/view?usp=sharing" target="_blank">
+<a href={Prashant_Singh_Resume} target="_blank" download>
 <Box>
   {colorMode === 'dark'?<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>:<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s",textDecoration:"none"}}>Resume   <MdDownload  /></Button>}
   </Box>
-</Link>
+</a>
   
   </Flex>
      </Center>
