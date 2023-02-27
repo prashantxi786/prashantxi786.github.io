@@ -63,16 +63,7 @@ const Myskills = () => {
      name:"Material UI",
      category:"Frontend"
    },
-   {id:13,
-     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
-     name:"Git",
-     category:"Backend"
-   },
-   {id:14,
-     image:"https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
-   name:"Postman",
-   category:"Backend"
- },
+   
  ]
   const [skillarr,setSkillarr]=useState(skillsarr)
     const darkcolor={
@@ -110,29 +101,29 @@ const Myskills = () => {
     }
     
     const handleFrontend=()=>{
-      let arr=skillsarr.filter((el)=>el.category=="Frontend")
+      let arr=skillsarr.filter((el)=>el.category==="Frontend")
       setSkillarr(arr)
     }
 
     const handleBackend=()=>{
-      let arr=skillsarr.filter((el)=>el.category=="Backend")
+      let arr=skillsarr.filter((el)=>el.category==="Backend")
       setSkillarr(arr)
     }
   return (
     <div  id="skills" data-aos="fade-up-right" data-aos-duration="3000">
       <Box style={colorMode === 'light'?mainbox:truebox}>
-        <Text fontSize={"30px"} fontWeight="bold">My <span style={colorMode==="dark"?darkcolor:lightcolor}>Skills</span> </Text>
+        <Text fontSize={"30px"} fontWeight="bold"><span style={colorMode==="dark"?darkcolor:lightcolor}>Skills</span> </Text>
         <Center>
         <Flex gap="20px" marginTop="20px">
-        <Button style={colorMode=="dark"?buttondark:buttonlight} onClick={()=>setSkillarr(skillsarr)}>All</Button>
-        <Button style={colorMode=="dark"?buttondark:buttonlight} onClick={handleFrontend}>Frontend</Button>
-        <Button style={colorMode=="dark"?buttondark:buttonlight} onClick={handleBackend}>Backend</Button>
+        <Button style={colorMode==="dark"?buttondark:buttonlight} onClick={()=>setSkillarr(skillsarr)}>All</Button>
+        <Button style={colorMode==="dark"?buttondark:buttonlight} onClick={handleFrontend}>Frontend</Button>
+        <Button style={colorMode==="dark"?buttondark:buttonlight} onClick={handleBackend}>Backend</Button>
         </Flex>
         </Center>
         
       <Grid templateColumns={{base:"repeat(3,1fr)",md:"repeat(5,1fr)",lg:"repeat(8,1fr)"}} width="90%" margin="auto" gap="20px" marginTop="30px">
-        {skillarr.map(el=><GridItem style={colorMode=="dark"?griddark:gridlight}  _hover={{transform:"scale(1.1)",transition:"0.5s"}}  textAlign="center" >
-          <Center><Image src={el.image} height={{base:"50px",lg:"70px"}} ></Image></Center>
+        {skillarr.map(el=><GridItem borderRadius={"45%"} style={colorMode==="dark"?griddark:gridlight}  _hover={{transform:"scale(1.1)",transition:"0.5s"}}  textAlign="center" >
+          <Center   ><Image  src={el.image} height={{base:"50px",lg:"70px"}} ></Image></Center>
           <Text fontWeight={{base:"400",lg:"bold"}} marginTop="15px" fontSize={{base:"13px",lg:"17px"}}>{el.name}</Text>
         </GridItem>)}
 

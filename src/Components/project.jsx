@@ -55,6 +55,7 @@ export const Projects = () => {
       },
       {proname:"Youtube Clone",
         prodesc:"Here is a clone of Youtube which I built as an assignment. Youtube is a online video streaming platform where you can watch any video. It has basic functionalities like fetching data from server, sorting data.",
+        techStack:"HTML, CSS, JavaScript",
         gif:"https://www.videoamigo.com/blog/wp-content/uploads/2019/11/youtube-redesign.gif",
         video:"",
         src:"https://github.com/masai-course/prashant_singh_fw21_0484/tree/master/unit-3/sprint-3/day-1/Youtube",
@@ -86,19 +87,19 @@ export const Projects = () => {
        >
         {proArray.map((pro)=>
         <GridItem data key={pro.proname} className={styles.child}>
-        <Link href={pro.link}><img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src={pro.gif} alt="expedia" /></Link>
+        <Link target="_blank" href={pro.link}><img style={{height:"50%",width:"100%",borderTopRightRadius:"10px",borderTopLeftRadius:"10px"}} src={pro.gif} alt="expedia" /></Link>
          <h2 className={styles.proName} style={colorMode==="dark"?darkcolor:lightcolor} >{pro.proname}</h2>
 
          <Text className={styles.proPara}>{pro.prodesc}</Text>
          
-         <Text style={{fontSize:"14px",color: "rgb(96, 97, 97)"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>{pro.techStack}</Text>
+         <Text style={{fontSize:"14px",color: "black",fontWeight:"bold"}}><span className={styles.techStack} style={colorMode==="dark"?darkcolor:lightcolor}>Tech Stack:-</span>{pro.techStack}</Text>
          
         
         <Box style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"70px",fontSize:"20px",marginTop:"15px"}}>
           <Button  className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}
-   > <a href={pro.video}><BsFillCameraVideoFill /></a> </Button>
-          <Button className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a href={pro.link}><BsFillEyeFill /></a></Button>
-          <Button  className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a href={pro.src}><BsGithub /></a></Button>
+   > <a target="_blank" href={pro.video}><BsFillCameraVideoFill /></a> </Button>
+          <Button className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a target="_blank" href={pro.link}><BsFillEyeFill /></a></Button>
+          <Button  className={styles.icons} _hover={{ fontSize: '20px',bg:"#e53e3e"}} bg={colorMode=="dark"?"rgba(0, 153, 255, 0.139)":"rgba(0, 153, 255, 0.139)"}><a target="_blank" href={pro.src}><BsGithub /></a></Button>
         </Box>
 
       </GridItem> 

@@ -18,7 +18,7 @@ const Contact = () => {
 
                     {/* Whatsapp */}
                     <Flex align="center">
-                    <Link href="https://wa.me/+918700644828?text=I%27m%20interested%20in%20your%20profile">
+                    <Link target="_blank" href="https://wa.me/+918700644828?text=I%27m%20interested%20in%20your%20profile">
                     <IconButton aria-label="email"
                         variant="ghost"size="lg"
                           fontSize="3xl"
@@ -36,7 +36,7 @@ const Contact = () => {
                     </Flex>
                       {/* Mail */}
                       <Flex align="center" >
-                      <Link href="mailto:someone@example.com">
+                      <Link target="_blank" href="mailto:someone@example.com">
                       <IconButton aria-label="email"
                         variant="ghost"size="lg"
                           fontSize="3xl"
@@ -53,7 +53,7 @@ const Contact = () => {
 
                       {/* github */}
                       <Flex align="center">
-                      <Link href="https://github.com/prashantxi786">
+                      <Link target="_blank" href="https://github.com/prashantxi786">
                       <IconButton aria-label="email"
                         variant="ghost"size="lg"
                           fontSize="3xl"
@@ -66,12 +66,12 @@ const Contact = () => {
                           isRound
                         />
                       </Link>
-                        <Link href="https://github.com/prashantxi786">prashantxi786</Link>
+                        <Link  target="_blank" href="https://github.com/prashantxi786">prashantxi786</Link>
                       </Flex>
 
                       {/* Linkedin */}
                       <Flex align="center">
-                      <Link href="https://www.linkedin.com/in/prashant-s-428990148/">
+                      <Link target="_blank" href="https://www.linkedin.com/in/prashant-s-428990148/">
                       <IconButton aria-label="email"
                         variant="ghost"size="lg"
                           fontSize="3xl"
@@ -83,12 +83,12 @@ const Contact = () => {
                           
                           isRound
                         /></Link>
-                        <Link href="https://www.linkedin.com/in/prashant-s-428990148/">linkedin/prashantxi786</Link>
+                        <Link target="_blank" href="https://www.linkedin.com/in/prashant-s-428990148/">linkedin/prashantxi786</Link>
                       </Flex>
 
                       {/* Instagram */}
                       <Flex align="center">
-                      <Link href="https://www.instagram.com/Prashant_blessed11/">
+                      <Link target="_blank" href="https://www.instagram.com/Prashant_blessed11/">
                       <IconButton aria-label="email"
                         variant="ghost"size="lg"
                           fontSize="3xl"
@@ -101,7 +101,7 @@ const Contact = () => {
                           isRound
                         />
                         </Link>
-                        <Link href="https://www.instagram.com/Prashant_blessed11/">Prashant_blessed11</Link>
+                        <Link target="_blank" href="https://www.instagram.com/Prashant_blessed11/">Prashant_blessed11</Link>
                       </Flex>
                       
             </Flex>

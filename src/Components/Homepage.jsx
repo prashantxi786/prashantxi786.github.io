@@ -6,9 +6,10 @@ import Typewriter from 'typewriter-effect';
 import {MdDownload} from "react-icons/md"
 import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
-import Myskills from '../MySkills';
+import Myskills from './MySkills';
 import Githubcalender from "./Githubcalender"
 import Prashant_Singh_Resume from "./Prashant_Singh_Resume.pdf"
+import Tools from "./Tools"
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
 {id:3,link:"https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"},
@@ -56,10 +57,10 @@ const Homepage = () => {
 /></Box>
 
 <Flex textAlign={"start"} marginTop="20px" gap="20px" alignItems={"center"}>
-<Link href="https://github.com/prashantxi786"><Box>
+<Link target="_blank" href="https://github.com/prashantxi786"><Box>
   {colorMode === 'dark'?<Box fontSize="45px"><BsGithub /></Box>:<Image src="https://cdn.icon-icons.com/icons2/2368/PNG/512/github_logo_icon_143772.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box></Link>
-  <Link href="https://www.linkedin.com/in/prashant-s-428990148/">
+  <Link target="_blank" href="https://www.linkedin.com/in/prashant-s-428990148/">
   <Box>
   {colorMode === 'light'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box></Link>
@@ -113,6 +114,7 @@ const Homepage = () => {
       </Box>}
       <Aboutme />
       <Myskills />
+      <Tools/>
       <Githubcalender />
     </div>
   )
