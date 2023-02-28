@@ -18,6 +18,7 @@ import {
     useDisclosure,Link
   } from '@chakra-ui/react';
 import AOS from 'aos';
+import Prashant_Singh_Resume from "./fw21_0484-Prashant-Singh-Resume.pdf"
 import { HashLink  } from 'react-router-hash-link';
 import React from 'react'
 import 'aos/dist/aos.css';
@@ -39,7 +40,9 @@ import { contextapi } from '../Contextapi';
     }
     const { isOpen, onToggle } = useDisclosure();
     const { colorMode, toggleColorMode } = useColorMode();
-
+    const handleClick=()=>{
+      window.open(Prashant_Singh_Resume,"_blank","noreferrer")
+    }
     React.useEffect(() => {
       AOS.init();
     }, [])
@@ -81,7 +84,7 @@ import { contextapi } from '../Contextapi';
             </Text>
   
             <Flex mr="20px" display={{ base: 'none', md: 'flex' }} justifyContent="flex-end" >
-              <DesktopNav />
+              <DesktopNav handleClick={handleClick} />
             </Flex>
           </Flex>
   
@@ -97,7 +100,7 @@ import { contextapi } from '../Contextapi';
     );
   }
   
-  const DesktopNav = () => {
+  const DesktopNav = ({handleClick}) => {
     const linkColor = useColorModeValue('gray.900', 'orange.200');
     const linkHoverColor = useColorModeValue('blue.300', 'red.400');
   
@@ -129,6 +132,7 @@ import { contextapi } from '../Contextapi';
             </Popover>
           </Box>
         ))}
+        <Link  _hover={{textDecoration: 'none'}}  href={Prashant_Singh_Resume} download="fw21_0484-Prashant-Singh-Resume"><Box className={styles.navbutton} onClick={handleClick}>Resume</Box></Link>
       </Stack>
     );
   };
