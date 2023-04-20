@@ -132,7 +132,7 @@ import { contextapi } from '../Contextapi';
             </Popover>
           </Box>
         ))}
-        <Link  _hover={{textDecoration: 'none'}}  href={Prashant_Singh_Resume} download="Prashant_Singh_Resume"><Box className={styles.navbutton} onClick={handleClick}>Resume</Box></Link>
+        <Link  _hover={{textDecoration: 'none'}}  href={Prashant_Singh_Resume} download="Prashant_Singh_Resume.pdf"><Box className={styles.navbutton} onClick={handleClick}>Resume</Box></Link>
       </Stack>
     );
   };
