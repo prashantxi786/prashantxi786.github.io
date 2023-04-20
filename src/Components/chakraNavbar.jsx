@@ -18,7 +18,7 @@ import {
     useDisclosure,Link
   } from '@chakra-ui/react';
 import AOS from 'aos';
-import Prashant_Singh_Resume from "./fw21_0484-Prashant-Singh-Resume.pdf"
+import Prashant_Singh_Resume from "./Prashant_Singh_Resume.pdf"
 import { HashLink  } from 'react-router-hash-link';
 import React from 'react'
 import 'aos/dist/aos.css';
@@ -132,7 +132,7 @@ import { contextapi } from '../Contextapi';
             </Popover>
           </Box>
         ))}
-        <Link  _hover={{textDecoration: 'none'}}  href={Prashant_Singh_Resume} download="fw21_0484-Prashant-Singh-Resume"><Box className={styles.navbutton} onClick={handleClick}>Resume</Box></Link>
+        <Link  _hover={{textDecoration: 'none'}}  href={Prashant_Singh_Resume} download="Prashant_Singh_Resume"><Box className={styles.navbutton} onClick={handleClick}>Resume</Box></Link>
       </Stack>
     );
   };

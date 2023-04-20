@@ -8,7 +8,7 @@ import { BsGithub } from 'react-icons/bs';
 import Aboutme from './Aboutme';
 import Myskills from './MySkills';
 import Githubcalender from "./Githubcalender"
-import Prashant_Singh_Resume from "./fw21_0484-Prashant-Singh-Resume.pdf"
+import Prashant_Singh_Resume from "./Prashant_Singh_Resume.pdf"
 import Tools from "./Tools"
 const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.png"},
 {id:2,link:"https://e7.pngegg.com/pngimages/239/228/png-clipart-html-css3-cascading-style-sheets-logo-markup-language-digital-agency-miscellaneous-blue.png"},
@@ -64,7 +64,7 @@ const Homepage = () => {
   <Box>
   {colorMode === 'light'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box></Link>
-  <a href={Prashant_Singh_Resume} download="fw21_0484_Prashant-Singh-Resume">
+  <a href={Prashant_Singh_Resume} download="Prashant_Singh_Resume">
   <Box onClick={handleClick}>
   {colorMode === 'light'?<Button  backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume   <MdDownload  /></Button>:<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>}
   </Box></a>
@@ -103,7 +103,7 @@ const Homepage = () => {
   {colorMode === 'dark'?<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>:<Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/768px-LinkedIn_icon.svg.png" width="40px" _hover={{transform:"scale(1.1)",transition:"0.5s"}}/>}
   </Box>
 </Link>
-<a onClick={handleClick} href={Prashant_Singh_Resume}  download="fw21_0484-Prashant-Singh-Resume">
+<a onClick={handleClick} href={Prashant_Singh_Resume}  download="Prashant_Singh_Resume">
 <Box >
   {colorMode === 'dark'?<Button backgroundColor={"#6d28d9"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center" _hover={{transform:"scale(1.1)",transition:"0.5s"}}>Resume <MdDownload /></Button>:<Button backgroundColor={"#e53e3e"} color="white" padding="20px" fontSize={"20px"} display="flex" alignItems="center"  _hover={{transform:"scale(1.1)",transition:"0.5s",textDecoration:"none"}}>Resume   <MdDownload  /></Button>}
   </Box>
