@@ -70,15 +70,8 @@ export const Projects = () => {
         video:"",
         src:"https://github.com/masai-course/prashant_singh_fw21_0484/tree/master/unit-3/sprint-3/day-1/Youtube",
         link:"https://clever-choux-09ce25.netlify.app/"
-      },
-      {proname:"Lync Club",
-        prodesc:"Lync Club(Bewakoof.com) is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparel based on dazzling and upbeat designs that resonate with the millennials.",
-        techStack:"HTML, CSS, JavaScript, Node, ChakraUI",
-        gif:"https://images.bewakoof.com/uploads/grid/app/29-11-2022-DOTW-Msite-banner-Homepage-Men-1669623535.gif",
-        video:"",
-        src:"https://github.com/prashantxi786/equal-slip-6381",
-        link:"https://lambent-narwhal-8bd70e.netlify.app/"
       }
+     
       
     ]
   return (
