@@ -21,6 +21,16 @@ export const Projects = () => {
       backgroundColor:"#050402"
     }
     const proArray=[
+      {
+        proname:"Lavish World",
+        prodesc:"Lavish World is a luxury lifestyle brand. Your one-stop destination for the very best new products in massage & personal care, home, travel, gifts, and more. We made this project in 4 days. Share your valuable feedback to me.",
+        techStack:"React, Redux, Node.JS, JSON, ExpressJS, MongoDB, Mongoose, ChakraUI",
+        gif:"https://i.postimg.cc/DwBHT5Z8/Screenshot-2023-04-26-121243.png",
+        video:"",
+        src:"https://github.com/prashantxi786/Lavish-World",
+        link:"https://stellar-clafoutis-871554.netlify.app/"
+      }
+      ,
       {proname:"TechoMania",
         prodesc:"TechoMania is a camera, electronics, and film equipment online retailer. This project is clone of Adorama.com. I lead the team of 4 people and my responsibility was to create all the functionality and UI of Landing Page.",
         techStack:"React, Redux, Firebase, Node, JSON, Render, Vercel, ChakraUI",
