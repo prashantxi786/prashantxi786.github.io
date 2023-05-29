@@ -23,7 +23,7 @@ const skillimage=[{id:1,link:"https://cdn-icons-png.flaticon.com/512/174/174854.
 const Homepage = () => {
   const [isLargerThan800] = useMediaQuery('(min-width: 800px)')
   const { colorMode} = useColorMode()
-  console.log(colorMode)
+//   console.log(colorMode)
  
   const mainbox={
     backgroundColor:"#dff4ff",
